@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+
+/* Bagian Bawah */
+.row .kanan {
+  width: 100%;
+
+  right: 10%;
+  top: 4%;
+  background: #efd2a5;
+  box-shadow: 0px 12px 4px #b97e64, 0px 12px 4px rgba(134, 76, 51, 0.58), 0px 13px 4px #d3b48c;
+}
+
+/* Bagian Atas */
+.row .kiri {
+  width: 100%;
+
+  right: 10%;
+  top: 4%;
+  background: #efd2a5;
+  box-shadow: 0px 12px 4px #b97e64, 0px 12px 4px rgba(134, 76, 51, 0.58), 0px 13px 4px #d3b48c;
+}
+
+.name,
+#nama {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: #c4431c;
+}
+
+.sosialmedia .cover,
+#sosialmedia {
+  display: inline;
+}
+.sosialmedia,
+#sosialmedia .github {
+  width: 50px;
+}
+
+.sosialmedia,
+#sosialmedia .linkedin {
+  width: 33px;
+}
+/* HP */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 770px) {
+  main .row {
+    display: block;
+    margin-left: 4%;
+    width: 90%;
+    left: 122px;
+    top: 131px;
+
+    background: #864c33;
+    border: 20px dashed #dbaa39;
+  }
+
+  .sosialmedia .cover,
+  #sosialmedia {
+    display: inline;
+    margin-left: 30%;
+  }
+  .sosialmedia,
+  #sosialmedia .github {
+    width: 50px;
+  }
+
+  .sosialmedia,
+  #sosialmedia .linkedin {
+    width: 33px;
+  }
+  /* nama Surya Luqman Fullstack */
+  .name,
+  #nama {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    color: #c4431c;
+    
+    
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  main .row {
+    display: block;
+    margin-left: 4%;
+    width: 90%;
+    left: 122px;
+    top: 131px;
+
+    background: #864c33;
+    border: 20px dashed #dbaa39;
+  }
+
+  .sosialmedia .cover,
+  #sosialmedia {
+    display: inline;
+    margin-left: 35%;
+  }
+  .sosialmedia,
+  #sosialmedia .github {
+    width: 50px;
+  }
+
+  .sosialmedia,
+  #sosialmedia .linkedin {
+    width: 33px;
+  }
+  /* nama Surya Luqman Fullstack */
+  .name,
+  #nama {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    color: #c4431c;
+    margin-bottom: -40px;
+  }
+}
+
+/* laptop */
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+  /* Sampul */
+  main {
+    margin-left: 4%;
+
+    width: 90%;
+    height: 100vh;
+    left: 122px;
+    top: 131px;
+
+    background: #864c33;
+    border: 20px dashed #dbaa39;
+  }
+  /* Halaman Kanan */
+  .row .kanan {
+    position: absolute;
+    width: 46%;
+    height: 90%;
+    right: 10%;
+    top: 4%;
+    background: #efd2a5;
+    box-shadow: 10px 12px 4px #b97e64, 10px 12px 4px rgba(134, 76, 51, 0.58), 12px 13px 4px #d3b48c;
+  }
+
+  .row .kiri {
+    /* Halaman kiri */
+    position: absolute;
+
+    width: 36%;
+    height: 90%;
+    left: 7%;
+    top: 4%;
+
+    background: #efd2a5;
+    box-shadow: -10px 12px 4px rgba(185, 126, 100, 0.25), -10px 12px 4px rgba(134, 76, 51, 0.58), -12px 13px 4px #d3b48c;
+  }
+
+  /* Pembatas (Ring Binder) */
+  .row .tengah {
+    z-index: 1;
+    width: 58px;
+    height: 688px;
+    left: 562px;
+    top: 41px;
+    background-image: url("../img/binder_ring-removebg-preview.png");
+    background-repeat: repeat-y;
+    margin-left: 40%;
+  }
+
+  /* nama Profil */
+  .row .displayname {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    right: -10px;
+    top: -59px;
+    color: solid red;
+    font-size: 50px;
+    background: url(../img/bordername.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+  }
+
+  main .d-flex {
+    margin-top: -25%;
+    margin-left: 5%;
+    border: solid 1px;
+    width: 350px;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1350px) {
+  main {
+    margin-left: 4%;
+
+    width: 90%;
+    height: 100vh;
+    left: 122px;
+    top: 131px;
+
+    background: #864c33;
+    border: 20px dashed #dbaa39;
+  }
+  /* Halaman Kanan */
+  .row .kanan {
+    position: absolute;
+    width: 46%;
+    height: 90%;
+    right: 10%;
+    top: 4%;
+    background: #efd2a5;
+    box-shadow: 10px 12px 4px #b97e64, 10px 12px 4px rgba(134, 76, 51, 0.58), 12px 13px 4px #d3b48c;
+  }
+
+  .row .kiri {
+    /* Halaman kiri */
+    position: absolute;
+
+    width: 36%;
+    height: 90%;
+    left: 7%;
+    top: 4%;
+
+    background: #efd2a5;
+    box-shadow: -10px 12px 4px rgba(185, 126, 100, 0.25), -10px 12px 4px rgba(134, 76, 51, 0.58), -12px 13px 4px #d3b48c;
+  }
+
+  /* Pembatas (Ring Binder) */
+  .row .tengah {
+    z-index: 1;
+    width: 58px;
+    height: 530px;
+    left: 562px;
+    top: 41px;
+    background-image: url("../img/binder_ring-removebg-preview.png");
+    background-repeat: repeat-y;
+    margin-left: 40%;
+  }
+
+  /* nama Profil */
+  .row .displayname {
+    display: none;
+  }
+  main .d-flex {
+    margin-top: 2%;
+    margin-left: 10%;
+    border: solid 1px;
+    width: 350px;
+  }
+
+  .name,
+  #nama {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    color: #c4431c;
+    margin-bottom: -40px;
+  }
+}
