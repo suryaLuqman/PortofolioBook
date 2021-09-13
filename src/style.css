@@ -1,271 +1,195 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
+  overflow: hidden;
+  width: 100vw;
+}
+
+main {
+  /* sampul */
+
   position: relative;
+  width: 85vw;
+  height: 90vh;
+  left: 6%;
+  top: 30px;
+  border: 20px dashed #dbaa39;
+  background: #864c33;
+  border-style: double;
+  padding-top: 5px;
+  -webkit-box-shadow: 14px 16px 29px -1px #000000;
+  box-shadow: 14px 16px 29px -1px #000000;
 }
 
-/* Bagian Bawah */
-.row .kanan {
-  width: 100%;
-
-  right: 10%;
-  top: 4%;
-  background: #efd2a5;
-  box-shadow: 0px 12px 4px #b97e64, 0px 12px 4px rgba(134, 76, 51, 0.58), 0px 13px 4px #d3b48c;
-}
-
-/* Bagian Atas */
-.row .kiri {
-  width: 100%;
-
-  right: 10%;
-  top: 4%;
-  background: #efd2a5;
-  box-shadow: 0px 12px 4px #b97e64, 0px 12px 4px rgba(134, 76, 51, 0.58), 0px 13px 4px #d3b48c;
-}
-
-.name,
-#nama {
+ul span a {
+  margin: 0 5% ;
+  /* background-color: saddlebrown; */
   text-transform: uppercase;
-  font-family: "Bebas Neue", cursive;
-  font-size: 30px;
-  color: #c4431c;
+  color: white;
 }
 
-.sosialmedia .cover,
-#sosialmedia {
-  display: inline;
-}
-.sosialmedia,
-#sosialmedia .github {
-  width: 50px;
-}
 
-.sosialmedia,
-#sosialmedia .linkedin {
-  width: 33px;
-}
 /* HP */
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 770px) {
-  main .row {
+  body {
+    overflow: unset;
+  }
+
+  main {
+    height: 100%;
+  }
+  .col-4 {
+    width: 100% !important;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .awalan.row {
     display: block;
-    margin-left: 4%;
-    width: 90%;
-    left: 122px;
-    top: 131px;
-
-    background: #864c33;
-    border: 20px dashed #dbaa39;
   }
+  .kiri {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    margin-left: 7%;
+    top: 9px;
 
-  .sosialmedia .cover,
-  #sosialmedia {
-    display: inline;
-    margin-left: 30%;
-  }
-  .sosialmedia,
-  #sosialmedia .github {
-    width: 50px;
+    background: #efd2a5;
+    box-shadow: -5px 5px 0px 0px #f7b85a, -10px 7px 0px 0px #e6c594, -15px 8px 0px 0px #e0a752, -20px 9px 0px 0px #e9c186, -25px 10px 0px 0px #da9938, -5px 6px 15px 5px #f3ae47;
   }
 
-  .sosialmedia,
-  #sosialmedia .linkedin {
-    width: 33px;
+  .kanan {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-right: 4%;
+    top: 5px;
+
+    background: #efd2a5;
+    box-shadow: 5px 5px 0px 0px #f7b85a, 10px 7px 0px 0px #e6c594, 15px 8px 0px 0px #e0a752, 20px 9px 0px 0px #e9c186, 25px 10px 0px 0px #da9938, 5px 6px 15px 5px #f3ae47;
   }
-  /* nama Surya Luqman Fullstack */
-  .name,
-  #nama {
+  .tengah {
+    display: none;
+  }
+  ul span a {
+    margin: 0 1%;
+    background-color: saddlebrown;
+
     text-transform: uppercase;
-    font-family: "Bebas Neue", cursive;
-    font-size: 30px;
-    color: #c4431c;
-    
-    
+    color: white;
   }
 }
 
 /* Tablet */
-@media (max-width: 992px) {
-  main .row {
-    display: block;
+@media (min-width: 775px) and (max-width: 992px) {
+  .kiri {
+    width: 100%;
+    height: 40vh !important;
     margin-left: 4%;
-    width: 90%;
-    left: 122px;
-    top: 131px;
+    top: 9px;
+    z-index: 3;
+    background: #efd2a5;
+    box-shadow: -5px 5px 0px 0px #f7b85a, -10px 7px 0px 0px #e6c594, -15px 8px 0px 0px #e0a752, -20px 9px 0px 0px #e9c186, -25px 10px 0px 0px #da9938, -5px 6px 15px 5px #f3ae47;
+  }
+  .col-4 {
+    width: 60vh !important;
+    height: 50vw;
+  }
+  div.col.kanan {
+    width: 600px !important;
+  }
+  .kanan {
+    width: 100%;
+    height: 45vh;
+    margin-right: 4%;
+    margin-left: -45px;
+    top: 5px;
+    z-index: 3;
+    background: #efd2a5;
+    box-shadow: 5px 5px 0px 0px #f7b85a, 10px 7px 0px 0px #e6c594, 15px 8px 0px 0px #e0a752, 20px 9px 0px 0px #e9c186, 25px 10px 0px 0px #da9938, 5px 6px 15px 5px #f3ae47;
+  }
+  ul span a {
+    margin: 0 1%;
+    background-color: saddlebrown;
 
-    background: #864c33;
-    border: 20px dashed #dbaa39;
-  }
-
-  .sosialmedia .cover,
-  #sosialmedia {
-    display: inline;
-    margin-left: 35%;
-  }
-  .sosialmedia,
-  #sosialmedia .github {
-    width: 50px;
-  }
-
-  .sosialmedia,
-  #sosialmedia .linkedin {
-    width: 33px;
-  }
-  /* nama Surya Luqman Fullstack */
-  .name,
-  #nama {
     text-transform: uppercase;
-    font-family: "Bebas Neue", cursive;
-    font-size: 30px;
-    color: #c4431c;
-    margin-bottom: -40px;
+    color: white;
   }
 }
 
-/* laptop */
-/* // Medium devices (tablets, less than 992px) */
-@media (min-width: 992px) {
-  /* Sampul */
-  main {
+/* Laptop*/
+@media (min-width: 993px) {
+  /* Menu */
+  ul span a {
+    display: block;
+    /* margin: 0 3%; */
+    /* background-color: saddlebrown; */
+    /* padding: 45px 3px 10px 10px; */
+    padding: 2px 3px 0 10px;
+    text-transform: uppercase;
+    color: wheat;
+  }
+  /* Menu */
+  #aboutme .page1.text-decoration-none{
+    background-color: #864c33;
+    padding: 15px 90px 15px 0;
+    margin-bottom: 8px;
+  }
+  #skill .page2.text-decoration-none{
+    background-color: #864c33;
+    padding: 15px 90px 15px 0;
+    margin-bottom: 8px;
+  }
+  #history .page3.text-decoration-none{
+    background-color: #864c33;
+    padding: 15px 90px 15px 0;
+    margin-bottom: 8px;
+  }
+  #project .page4.text-decoration-none{
+    background-color: #864c33;
+    padding: 15px 90px 15px 0;
+    margin-bottom: 8px;
+  }
+  /* Sampai sini */
+  .kiri {
+    width: 100%;
+    height: 80vh;
     margin-left: 4%;
-
-    width: 90%;
-    height: 100vh;
-    left: 122px;
-    top: 131px;
-
-    background: #864c33;
-    border: 20px dashed #dbaa39;
-  }
-  /* Halaman Kanan */
-  .row .kanan {
-    position: absolute;
-    width: 46%;
-    height: 90%;
-    right: 10%;
-    top: 4%;
+    top: 9px;
+    z-index: 3;
     background: #efd2a5;
-    box-shadow: 10px 12px 4px #b97e64, 10px 12px 4px rgba(134, 76, 51, 0.58), 12px 13px 4px #d3b48c;
+    box-shadow: -5px 5px 0px 0px #f7b85a, -10px 7px 0px 0px #e6c594, -15px 8px 0px 0px #e0a752, -20px 9px 0px 0px #e9c186, -25px 10px 0px 0px #da9938, -5px 6px 15px 5px #f3ae47;
   }
 
-  .row .kiri {
-    /* Halaman kiri */
-    position: absolute;
-
-    width: 36%;
-    height: 90%;
-    left: 7%;
-    top: 4%;
-
+  .kanan {
+    width: 100%;
+    height: 80vh;
+    margin-right: 4%;
+    top: 5px;
+    z-index: 3;
     background: #efd2a5;
-    box-shadow: -10px 12px 4px rgba(185, 126, 100, 0.25), -10px 12px 4px rgba(134, 76, 51, 0.58), -12px 13px 4px #d3b48c;
+    box-shadow: 5px 5px 0px 0px #f7b85a, 10px 7px 0px 0px #e6c594, 15px 8px 0px 0px #e0a752, 20px 9px 0px 0px #e9c186, 25px 10px 0px 0px #da9938, 5px 6px 15px 5px #f3ae47;
   }
 
-  /* Pembatas (Ring Binder) */
-  .row .tengah {
-    z-index: 1;
-    width: 58px;
-    height: 688px;
-    left: 562px;
-    top: 41px;
-    background-image: url("../img/binder_ring-removebg-preview.png");
+  .tengah {
+    background-color: #efd2a5;
+
+    border-radius: 27px;
+    /* background-image: url(../img/binder_ring-removebg-preview.png);
+    background-size: 100px; */
     background-repeat: repeat-y;
-    margin-left: 40%;
-  }
-
-  /* nama Profil */
-  .row .displayname {
-    position: relative;
-    width: 350px;
-    height: 200px;
-    right: -10px;
-    top: -59px;
-    color: solid red;
-    font-size: 50px;
-    background: url(../img/bordername.png);
-    background-repeat: no-repeat;
-    background-size: 350px;
-  }
-
-  main .d-flex {
-    margin-top: -25%;
-    margin-left: 5%;
-    border: solid 1px;
-    width: 350px;
+    z-index: 0;
+    transform: scale(1.1);
   }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1350px) {
-  main {
-    margin-left: 4%;
-
-    width: 90%;
-    height: 100vh;
-    left: 122px;
-    top: 131px;
-
-    background: #864c33;
-    border: 20px dashed #dbaa39;
-  }
-  /* Halaman Kanan */
-  .row .kanan {
-    position: absolute;
-    width: 46%;
-    height: 90%;
-    right: 10%;
-    top: 4%;
-    background: #efd2a5;
-    box-shadow: 10px 12px 4px #b97e64, 10px 12px 4px rgba(134, 76, 51, 0.58), 12px 13px 4px #d3b48c;
-  }
-
-  .row .kiri {
-    /* Halaman kiri */
-    position: absolute;
-
-    width: 36%;
-    height: 90%;
-    left: 7%;
-    top: 4%;
-
-    background: #efd2a5;
-    box-shadow: -10px 12px 4px rgba(185, 126, 100, 0.25), -10px 12px 4px rgba(134, 76, 51, 0.58), -12px 13px 4px #d3b48c;
-  }
-
-  /* Pembatas (Ring Binder) */
-  .row .tengah {
-    z-index: 1;
-    width: 58px;
-    height: 530px;
-    left: 562px;
-    top: 41px;
-    background-image: url("../img/binder_ring-removebg-preview.png");
-    background-repeat: repeat-y;
-    margin-left: 40%;
-  }
-
-  /* nama Profil */
-  .row .displayname {
-    display: none;
-  }
-  main .d-flex {
-    margin-top: 2%;
-    margin-left: 10%;
-    border: solid 1px;
-    width: 350px;
-  }
-
-  .name,
-  #nama {
-    text-transform: uppercase;
-    font-family: "Bebas Neue", cursive;
-    font-size: 30px;
-    color: #c4431c;
-    margin-bottom: -40px;
-  }
 }

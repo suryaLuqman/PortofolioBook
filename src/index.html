@@ -1,48 +1,112 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>Surya Luqman Fathulloh</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <!-- <div>
+    <nav class="navbar fixed-top"><ul class="menu ">
+      <span id="aboutme"><a class="page1 text-decoration-none " href="#">info</a></span>
+      <span id="skill"><a class="page2 text-decoration-none " href="#">skill</a></span>
+      <span id="history"><a class="page3 text-decoration-none " href="#">history</a></span>
+      <span id="project"><a class="page4 text-decoration-none " href="#">project</a></span>
+    </ul></nav>
+  </div> -->
     <main>
-      <div class="row">
-        <div class="col kiri">
-          <div class="displayname">
-            <p></p>
-          </div>
-          <div class=" d-flex justify-content-center ">
-            <img src="../img/photoprofile-removebg-preview.png" alt="avatar" />
-          </div>
-          <div class="name text-center fw-bold " id="Nama"><span><b>Surya Luqman Fathulloh</b></span>
-          <p>Fullstack developer</p></div><br>
-          <div class="sosialmedia cover  " id="sosialmedia">
-            <img src="../sosial/github.svg" alt="github" class="github"></img>
-            
-            <a href="https://www.linkedin.com/in/surya-luqman-fathulloh-89a3a421b" target="_blank" > <img src="../sosial/linkedin.svg" alt="linkedin" class="linkedin"></img></a>
-            
+      <div class="awalan row">
+        <!-- <span style="text-align: end;">test</span> -->
+        <div class="col-4 kiri">
+          <div class="text-center fw-bold"><span class="">Surya Luqman Fathulloh</span></div>
+        </div>
+        <div class="col-1 tengah"></div>
+        <div class="text-center col kanan">
+          <div class="row">
+            <div class="col">
+              <span class="content1">
+                ******** info *********
+
+                <!--sampai sini -->
+              </span>
+
+              <span class="content2" style="display: none">
+                ****skill****
+
+                <!--sampai sini -->
+              </span>
+
+              <span class="content3" style="display: none">
+                ****history****
+
+                <!--sampai sini -->
+              </span>
+
+              <span class="content4" style="display: none">
+                **** project ****
+
+                <!--sampai sini -->
+              </span>
+            </div>
+            <div class="col-1">
+              <ul class="menu" id="menus">
+                <span id="aboutme"><a class="page1 text-decoration-none" href="#">info</a></span>
+                <span id="skill"><a class="page2 text-decoration-none" href="#">skill</a></span>
+                <span id="history"><a class="page3 text-decoration-none" href="#">history</a></span>
+                <span id="project"><a class="page4 text-decoration-none" href="#">project</a></span>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col kanan">
-          <div class="navbar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam accusantium ea sapiente eligendi odio consequuntur ab quae cum iste.</p>
-          </div>
-        </div>
-        <div class="col tengah"></div>
       </div>
     </main>
-    <footer></footer>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Daftar Menu ganti slide -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(".page1").click(function () {
+          jQuery(".content1").show();
+          jQuery(".content2").hide();
+          jQuery(".content3").hide();
+          jQuery(".content4").hide();
+          return false;
+        });
+
+        jQuery(".page2").click(function () {
+          jQuery(".content1").hide();
+          jQuery(".content2").show();
+          jQuery(".content3").hide();
+          jQuery(".content4").hide();
+          return false;
+        });
+
+        jQuery(".page3").click(function () {
+          jQuery(".content1").hide();
+          jQuery(".content2").hide();
+          jQuery(".content3").show();
+          jQuery(".content4").hide();
+          return false;
+        });
+
+        jQuery(".page4").click(function () {
+          jQuery(".content1").hide();
+          jQuery(".content2").hide();
+          jQuery(".content3").hide();
+          jQuery(".content4").show();
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>
